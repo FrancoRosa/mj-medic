@@ -1,12 +1,13 @@
 import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import ECGPlot from './ECGPlot';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+    <div class="plots">
+      <ECGPlot title="SpO2"/>
+      <ECGPlot title="ECG"/>
+      <ECGPlot title="OtherData"/>
     </div>
   );
 }
