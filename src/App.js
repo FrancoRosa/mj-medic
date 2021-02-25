@@ -4,10 +4,10 @@ import ECGPlot from './ECGPlot';
 
 function App() {
   return (
-    <div class="plots">
-      <ECGPlot title="SpO2"/>
-      <ECGPlot title="ECG"/>
-      <ECGPlot title="OtherData"/>
+    <div className="plots">
+      <ECGPlot title="SpO2" samples={200} color='blue'/>
+      <ECGPlot title="ECG" samples={80} color='green'/>
+      <ECGPlot title="OtherData" samples={1200} color='green'/>
     </div>
   );
 }
